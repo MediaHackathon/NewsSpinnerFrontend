@@ -1,0 +1,63 @@
+@font-face {
+    font-family: MoonBold; 
+    src: url(./fonts/MOON-BOLD.OTF); 
+}
+@font-face {
+    font-family: RobotoRegular; 
+    src: url(./fonts/RobotoRegular.ttf); 
+}
+
+.main {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 80vh;
+  justify-content: center;
+}
+
+.spinner-logo {
+  animation: spinner-logo-spin infinite 5000ms linear;
+  width: 144px;
+  height: 144px;
+  background-image: url(./img/logo-spinner.svg);
+  background-size: cover;
+}
+
+h1 {
+  font-family: MoonBold;
+  font-size: 30px;
+  color: #333;
+  margin-top: 0;
+  margin-bottom: 60px;
+}
+
+.search input {
+  width: 570px;
+  padding: 8px;
+  border: 2px solid #333;
+  border-radius: 5px;
+   font-family: RobotoRegular;
+  font-size: 20px;
+}
+.search button {
+  background-color: #333;
+  border: none;
+  width: 213px;
+  height: 45px;
+  font-family: RobotoRegular;
+  font-size: 20px;
+  border-radius: 5px;
+  margin-left: 10px;
+  color: #fff;
+}
+.search button:focus {
+  outline: none;
+}
+.search button:hover {
+  background-color: #fff;
+}
+
+@keyframes spinner-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
