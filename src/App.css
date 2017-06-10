@@ -115,6 +115,7 @@ h2 {
   margin-bottom: 0;
 }
 .article .articleHeader {
+  cursor: pointer;
   margin-top: 10px;
 }
 .article .picture{

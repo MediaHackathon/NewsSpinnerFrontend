@@ -10,16 +10,14 @@ class ArticlesList extends Component {
         super(props);
     }
 
-    article(data) {
-        console.log(data);
+    article(data, index) {
         return (
-            <div className="article">
-                <h2 className="articleHeader">{data.title}</h2>
+            <div key={index} className="article">
+                <h2 className="articleHeader" onClick={() => window.location.href = data.url}>{data.title}</h2>
                 <div className="articleItem">
-
-                    <div className="picture"><img src="../img/facebook.png" width="81px" height="81px"/></div>
-                    <div className="text">fhjds fkjdk gkfjd gfdjg gkrjgerj rejior rjgggjdfkljgdf fkdjglkrej serkljg lsrek</div>
-                    <span className="arrow-down"></span>
+                    { data.picture && <div className="picture"><img src={data.picture} width="81px" height="81px"/></div> }
+                    { data.text && <div className="text">{data.text}</div> }
+                    { data.text && <span className="arrow-down" /> }
                 </div>
             </div>
         );

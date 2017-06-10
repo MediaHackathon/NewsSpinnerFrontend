@@ -17,7 +17,7 @@ class Header extends Component {
         return (
             <div className="header">
                 <div className="spinner-logo" />
-                <h1>News Spinner</h1>
+                <h1>Spinner News</h1>
                 <div className="search">
                     <form>
                         <input value={this.state.searchText} onChange={(event) => this.setState({searchText: event.target.value})} type="text"/>
