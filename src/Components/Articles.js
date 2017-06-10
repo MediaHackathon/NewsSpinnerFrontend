@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-import './App.css';
+import '../App.css';
 
 class Page extends Component {
     render() {
         return (
-            <div className="container">
+            <div className="articles-container">
 
             </div>
         );

@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import searchStore from '../Stores/Search';
 import Header from './Header';
+import Articles from './Articles';
 import { observer } from 'mobx-react';
 
 import '../App.css';
@@ -12,6 +13,7 @@ class Main extends Component {
         return (
             <div className={className}>
                 <Header/>
+                <Articles/>
             </div>
         );
     }
