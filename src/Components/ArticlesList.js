@@ -5,7 +5,7 @@ class ArticlesList extends Component {
     render() {
         return (
             <div className="newsColumn">
-                <h2>TJournal</h2>
+                <h2>{this.props.title}</h2>
                 <h2 className="secondHeader">Навальный</h2>
                 <div className="newsItem">
 
