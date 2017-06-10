@@ -76,6 +76,50 @@ h1 {
   flex-direction: column;
   height: 80vh;
 }
+.news-container {
+  display: flex;
+  flex-direction: row;
+  width: 1100px;
+  margin: 0 auto;
+}
+.newsColumn {
+  display: flex;
+  flex-direction: column;
+}
+.newsColumn .newsItem {
+  position: relative;
+  background-color: #ddd;
+  width: 90%;
+  padding: 12px;
+  border-radius: 5px;
+}
+.newsColumn .newsItem .arrow-down {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  width: 14px;
+  height: 9px;
+  background-image: url(./img/arrow-down.png);
+}
+.newsColumn h2 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: RobotoRegular;
+  font-size: 20px;
+}
+.newsColumn .secondHeader {
+  margin-top: 10px;
+}
+.newsColumn .picture{
+  float: left;
+  display: inline-block;
+  margin-right: 12px;
+}
+.newsColumn .text {
+  font-family: RobotoRegular;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
 
 @keyframes spinner-logo-spin {
   from { transform: rotate(0deg); }
