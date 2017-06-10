@@ -1,10 +1,8 @@
 import React, { Component } from 'react';
 import ArticlesList from './ArticlesList';
 import searchStore from '../Stores/Search';
-import { observer } from 'mobx-react';
 import '../App.css';
 
-@observer
 class Articles extends Component {
     render() {
         return (

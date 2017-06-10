@@ -32,7 +32,6 @@ class ArticlesList extends Component {
 
                 {this.article({ title: 'asdasdasd' })}
             </div>
-
         );
     }
 }
