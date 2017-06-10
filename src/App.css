@@ -7,14 +7,6 @@
     src: url(./fonts/RobotoRegular.ttf); 
 }
 
-.main {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  height: 80vh;
-  justify-content: center;
-}
-
 .spinner-logo {
   animation: spinner-logo-spin infinite 5000ms linear;
   width: 144px;
@@ -36,7 +28,8 @@ h1 {
   padding: 8px;
   border: 2px solid #333;
   border-radius: 5px;
-   font-family: RobotoRegular;
+  outline: none;
+  font-family: RobotoRegular;
   font-size: 20px;
 }
 .search button {
@@ -45,6 +38,8 @@ h1 {
   width: 213px;
   height: 45px;
   font-family: RobotoRegular;
+  transition: 200ms;
+  cursor: pointer;
   font-size: 20px;
   border-radius: 5px;
   margin-left: 10px;
@@ -54,7 +49,32 @@ h1 {
   outline: none;
 }
 .search button:hover {
-  background-color: #fff;
+  background-color: #444;
+}
+
+.top .header {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+}
+
+.top .header .spinner-logo {
+  display: none;
+}
+
+.top .header h1 {
+  position: relative;
+  top: 30px;
+  padding-right: 15px;
+}
+
+.main .header {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  height: 80vh;
 }
 
 @keyframes spinner-logo-spin {
