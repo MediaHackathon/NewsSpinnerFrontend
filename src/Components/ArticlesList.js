@@ -1,18 +1,15 @@
 import React, { Component } from 'react';
-import { observer } from 'mobx-react';
 import '../App.css';
 
-@observer
 class ArticlesList extends Component {
 
     constructor(props) {
         super(props);
     }
 
-    article(data) {
-        console.log(data);
+    article(data, index) {
         return (
-            <div>
+            <div key={index}>
                 <h2 className="secondHeader">{data.title}</h2>
                 <div className="newsItem">
 
@@ -25,11 +22,15 @@ class ArticlesList extends Component {
     }
 
     render() {
+        if (this.props.data.length === 0) {
+            return <div/>
+        }
+
         return (
             <div className="newsColumn">
                 <h2>{this.props.title}</h2>
 
-                {this.article({ title: 'asdasdasd' })}
+                {this.props.data.map(this.article)}
             </div>
         );
     }

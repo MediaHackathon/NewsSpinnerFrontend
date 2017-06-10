@@ -38,8 +38,7 @@ class Search  {
     setSearch(text) {
         this.search = text;
 
-        return this.getArticles(text)
-            .then((data) => this.searchResult = data)
+        return this.getArticles(text);
     }
 
 }
