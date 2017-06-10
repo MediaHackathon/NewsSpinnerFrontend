@@ -91,14 +91,14 @@ h1 {
   display: flex;
   flex-direction: column;
 }
-.newsColumn .newsItem {
+.newsColumn .articleItem {
   position: relative;
-  background-color: #ddd;
+  background-color: #f0f0f0;
   width: 90%;
   padding: 12px;
   border-radius: 5px;
 }
-.newsColumn .newsItem .arrow-down {
+.article .arrow-down {
   position: absolute;
   bottom: 10px;
   left: 50%;
@@ -112,15 +112,15 @@ h1 {
   font-family: RobotoRegular;
   font-size: 20px;
 }
-.newsColumn .secondHeader {
+.article .articleHeader {
   margin-top: 10px;
 }
-.newsColumn .picture{
+.article .picture{
   float: left;
   display: inline-block;
   margin-right: 12px;
 }
-.newsColumn .text {
+.article .text {
   font-family: RobotoRegular;
   font-size: 16px;
   margin-bottom: 20px;
