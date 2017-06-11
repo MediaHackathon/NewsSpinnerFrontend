@@ -14,7 +14,6 @@ class ArticlesList extends Component {
                 <div className="articleItem">
                     { data.picture && <div className="picture"><img src={data.picture} width="81px" height="81px"/></div> }
                     { data.text && <div className="text">{data.text}</div> }
-                    { data.text && <span className="arrow-down" /> }
                 </div>
             </div>
         );
@@ -27,7 +26,7 @@ class ArticlesList extends Component {
 
         return (
             <div className="newsColumn">
-                <h2>{this.props.title}</h2>
+                <h2 className="mainTitle">{this.props.title}</h2>
 
                 {this.props.data.map(this.article)}
             </div>

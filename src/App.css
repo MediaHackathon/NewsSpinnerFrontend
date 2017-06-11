@@ -1,3 +1,5 @@
+@import "carousel.css";
+
 @font-face {
     font-family: MoonBold; 
     src: url(./fonts/MOON-BOLD.OTF); 
@@ -108,21 +110,19 @@ h2 {
 .newsColumn .articleItem {
   position: relative;
   background-color: #f0f0f0;
-  width: 90%;
+  width: 100%;
   padding: 12px;
   border-radius: 5px;
 }
-.article .arrow-down {
-  position: absolute;
-  bottom: 10px;
-  left: 50%;
-  width: 14px;
-  height: 9px;
-  background-image: url(./img/arrow-down.png);
+.mainTitle{
+  font-size: 20px!important;
 }
 .newsColumn h2 {
+  font-size: 16px;
   margin-top: 0;
   margin-bottom: 0;
+  text-align: left;
+  font-family: RobotoRegular;
 }
 .article .articleHeader {
   cursor: pointer;
@@ -136,7 +136,7 @@ h2 {
 .article .text {
   font-family: RobotoRegular;
   font-size: 16px;
-  margin-bottom: 20px;
+  text-align: left;
 }
 .page {
   display: flex;
