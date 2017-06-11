@@ -58,9 +58,17 @@ h2 {
 
 .top .header {
   align-items: center;
-  justify-content: center;
+  justify-content: start;
   display: flex;
   flex-direction: row;
+  border-bottom: 1px solid #ddd;
+}
+
+.top .header input, .top .header button {
+  font-size: 16px;
+}
+.top .header button {
+  height: 39px;
 }
 
 .top .header .spinner-logo {
@@ -71,6 +79,7 @@ h2 {
   position: relative;
   top: 30px;
   padding-right: 15px;
+  padding-left: 20px;
 }
 
 .main .header {
@@ -86,10 +95,10 @@ h2 {
 }
 
 .news-container {
-  display: flex;
+  display: inline-block;
   flex-direction: row;
-  width: 1100px;
-  margin: 0 auto;
+  width: 70%;
+  padding: 20px;
 }
 .newsColumn {
   display: flex;
@@ -128,8 +137,35 @@ h2 {
   font-size: 16px;
   margin-bottom: 20px;
 }
+.page {
+  display: flex;
+  flex-direction: row;
+}
 
-
+.filterColumn {
+  height: 100vh;
+  width: 30%;
+  padding: 20px;
+}
+.filterItem:first-child{
+  border-radius: 10px 10px 0px 0px;
+}
+.filterItem:last-child{
+  border-radius: 0px 0px 10px 10px;
+}
+.filterItem {
+  background-color: #f0f0f0;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+.filterItem h2 {
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+.filterItem p {
+  margin-top: 0;
+  margin-bottom: 5px;
+}
 
 @keyframes spinner-logo-spin {
   from { transform: rotate(0deg); }

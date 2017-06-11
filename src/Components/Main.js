@@ -3,6 +3,7 @@ import searchStore from '../Stores/Search';
 import Header from './Header';
 
 import Articles from './Articles';
+import Filters from './Filters';
 
 import { observer } from 'mobx-react';
 
@@ -15,7 +16,11 @@ class Main extends Component {
         return (
             <div className={className}>
                 <Header/>
-                <Articles/>
+                <div className="page">
+                    <Articles/>
+                    <Filters/>
+                </div>
+               
             </div>
         );
     }

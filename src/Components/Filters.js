@@ -11,11 +11,17 @@ class Filters extends Component {
             <div className="filterColumn">
               <div className="filterItem">
               	<h2>Новостные порталы</h2>
-              	<p><input type="radio" name="Имя издателя или чего либо">Lenta.ru</p>
+              	<form>
+                  <p><input type="radio" name="Имя издателя или чего либо"/>NeLenta.ru</p>
+                  <p><input type="radio" name="Имя издателя или чего либо"/>Lenta.ru</p>
+                </form>
               </div>
               <div className="filterItem">
               	<h2>Новостные порталы</h2>
-              	<p><input type="radio" name="Имя издателя или чего либо">Lenta.ru</p>
+                <form>
+                  <p><input type="radio" name="Имя издателя или чего либо"/>Lenta.ru</p>
+                  <p><input type="radio" name="Имя издателя или чего либо"/>Lenta.ru</p>
+                </form>
               </div>
             </div>
         );
