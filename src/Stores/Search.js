@@ -6,6 +6,7 @@ class Search  {
     @observable searchResult;
     @observable choosedMedia;
     @observable selectedMedia;
+    @observable mediaSort;
 
     constructor() {
         this.search = '';
@@ -16,14 +17,16 @@ class Search  {
             lenta: []
         };
 
-        this.selectedMedia = 'kloop';
+        this.selectedMedia = 'zanoza';
 
         this.choosedMedia = [
-            'kloop',
             'zanoza',
             'cnn',
-            'lenta'
-        ]
+            'lenta',
+            'kloop'
+        ];
+
+        this.mediaSort = true;
     }
 
     getMediaName(key) {

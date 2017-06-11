@@ -1,7 +1,14 @@
 import React, { Component } from 'react';
+import { observer } from 'mobx-react';
+import searchStore from '../Stores/Search';
 import '../App.css';
 
+@observer
 class ArticlesList extends Component {
+
+    // state = {
+    //     data: []
+    // };
 
     constructor(props) {
         super(props);

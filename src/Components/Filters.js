@@ -15,8 +15,8 @@ class Filters extends Component {
               <div className="filterItem">
               	<h2>Сортировка</h2>
                 <form>
-                  <p><input type="radio" name="true"/>Новые сверху</p>
-                  <p><input type="radio" name="false"/>Старые сверху</p>
+                  <p><input type="radio" name={true} checked={searchStore.mediaSort === true} onChange={() => searchStore.mediaSort = true } />Новые сверху</p>
+                  <p><input type="radio" name={false} checked={searchStore.mediaSort === false} onChange={() => searchStore.mediaSort = false } />Старые сверху</p>
                 </form>
               </div>
             </div>

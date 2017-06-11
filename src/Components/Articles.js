@@ -4,8 +4,6 @@ import searchStore from '../Stores/Search';
 import { observer } from 'mobx-react';
 import '../App.css';
 
-import { Carousel } from 'react-responsive-carousel';
-
 @observer
 class Articles extends Component {
     render() {
