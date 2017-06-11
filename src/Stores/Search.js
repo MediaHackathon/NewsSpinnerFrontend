@@ -25,6 +25,13 @@ class Search  {
             json: true
         };
 
+        this.searchResult = {
+            kloop: [],
+            zanoza: [],
+            cnn: [],
+            lenta: []
+        };
+
         return rp(options)
             .then((json) => {
                 this.searchResult = json;
