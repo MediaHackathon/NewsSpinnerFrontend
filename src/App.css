@@ -20,7 +20,7 @@
 h1 {
   font-family: MoonBold;
   font-size: 30px;
-  color: #333;
+  color: #5d5d5d;
   margin-top: 0;
   margin-bottom: 60px;
 }
@@ -32,14 +32,14 @@ h2 {
 .search input {
   width: 570px;
   padding: 8px;
-  border: 2px solid #333;
+  border: 2px solid #5d5d5d;
   border-radius: 5px;
   outline: none;
   font-family: RobotoRegular;
   font-size: 20px;
 }
 .search button {
-  background-color: #333;
+  background-color: #5d5d5d;
   border: none;
   width: 213px;
   height: 45px;
@@ -138,6 +138,13 @@ h2 {
   font-size: 16px;
   text-align: left;
 }
+.article .date {
+  font-family: RobotoRegular;
+  font-size: 16px;
+  text-align: left;
+  text-decoration: underline;
+  margin-bottom: 8px;
+}
 .page {
   display: flex;
   flex-direction: row;
@@ -166,6 +173,35 @@ h2 {
 .filterItem p {
   margin-top: 0;
   margin-bottom: 5px;
+}
+
+
+.publishers {
+  width: 100%;
+}
+.publishers ul {
+  padding: 20px 10px 0px 10px;
+  margin: 0;
+  border-bottom: 1px solid #ddd;
+}
+.publishers ul li {
+  display: inline;
+  list-style: none;
+  margin-right: 50px;
+  cursor: pointer;
+  font-weight: 600;
+  border-bottom: 1px solid #fff;
+}
+.publishers ul li:first-child {
+  margin-left: 20px;
+}
+.publishers ul li.choosen{
+  background-color: #fff;
+  padding: 10px 20px 20px 20px;
+  border-radius: 3px;
+  border-top: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  border-left: 1px solid #ddd;
 }
 
 @keyframes spinner-logo-spin {

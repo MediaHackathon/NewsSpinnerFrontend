@@ -12,6 +12,7 @@ class ArticlesList extends Component {
             <div key={index} className="article">
                 <h2 className="articleHeader" onClick={() => window.location.href = data.url}>{data.title}</h2>
                 <div className="articleItem">
+                    { data.timestamp && <div className="date">{data.timestamp}</div> }
                     { data.picture && <div className="picture"><img src={data.picture} width="81px" height="81px"/></div> }
                     { data.text && <div className="text">{data.text}</div> }
                 </div>
