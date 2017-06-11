@@ -4,6 +4,7 @@ import rp from 'request-promise';
 class Search  {
     @observable search;
     @observable searchResult;
+    @observable changedMedia;
 
     constructor() {
         this.search = '';
@@ -12,6 +13,25 @@ class Search  {
             zanoza: [],
             cnn: [],
             lenta: []
+        };
+
+        this.changedMedia = [
+            'kloop',
+            'zanoza',
+            'cnn',
+            'lenta'
+        ]
+    }
+
+    isChangedMedia(name) {
+        return this.changedMedia.includes(name);
+    }
+
+    changeChecked(name) {
+        if (this.changedMedia.includes(name)) {
+            this.changedMedia = this.changedMedia.filter(e => e !== name);
+        } else {
+            this.changedMedia.push(name);
         }
     }
 

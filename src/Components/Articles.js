@@ -11,10 +11,10 @@ class Articles extends Component {
     render() {
         return (
             <Carousel showArrows={true} className="news-container">
-				<div><ArticlesList title="CNN" data={searchStore.searchResult.cnn} /></div>
-				<div><ArticlesList title="Kloop" data={searchStore.searchResult.kloop} /></div>
-				<div><ArticlesList title="Lenta.ru" data={searchStore.searchResult.lenta} /></div>
-				<div><ArticlesList title="Zanoza" data={searchStore.searchResult.zanoza} /></div>
+                { searchStore.isChangedMedia('cnn') && <div><ArticlesList title="CNN" data={searchStore.searchResult.cnn} /></div> }
+				{ searchStore.isChangedMedia('kloop') && <div><ArticlesList title="Kloop" data={searchStore.searchResult.kloop} /></div> }
+				{ searchStore.isChangedMedia('lenta') && <div><ArticlesList title="Lenta.ru" data={searchStore.searchResult.lenta} /></div> }
+				{ searchStore.isChangedMedia('zanoza') && <div><ArticlesList title="Zanoza" data={searchStore.searchResult.zanoza} /></div> }
             </Carousel>
         );
     }
