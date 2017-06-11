@@ -10,12 +10,12 @@ import { Carousel } from 'react-responsive-carousel';
 class Articles extends Component {
     render() {
         return (
-            <Carousel showArrows={true} className="news-container">
-                { searchStore.isChangedMedia('cnn') && <div><ArticlesList title="CNN" data={searchStore.searchResult.cnn} /></div> }
-				{ searchStore.isChangedMedia('kloop') && <div><ArticlesList title="Kloop" data={searchStore.searchResult.kloop} /></div> }
-				{ searchStore.isChangedMedia('lenta') && <div><ArticlesList title="Lenta.ru" data={searchStore.searchResult.lenta} /></div> }
-				{ searchStore.isChangedMedia('zanoza') && <div><ArticlesList title="Zanoza" data={searchStore.searchResult.zanoza} /></div> }
-            </Carousel>
+            <div>
+                { searchStore.isChangedMedia('cnn') && <ArticlesList title="CNN" data={searchStore.searchResult.cnn} /> }
+				{ searchStore.isChangedMedia('kloop') && <ArticlesList title="Kloop" data={searchStore.searchResult.kloop} /> }
+				{ searchStore.isChangedMedia('lenta') && <ArticlesList title="Lenta.ru" data={searchStore.searchResult.lenta} /> }
+				{ searchStore.isChangedMedia('zanoza') && <ArticlesList title="Zanoza" data={searchStore.searchResult.zanoza} /> }
+            </div>
         );
     }
 }

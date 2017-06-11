@@ -4,7 +4,8 @@ import rp from 'request-promise';
 class Search  {
     @observable search;
     @observable searchResult;
-    @observable changedMedia;
+    @observable choosedMedia;
+    @observable selectedMedia;
 
     constructor() {
         this.search = '';
@@ -15,7 +16,9 @@ class Search  {
             lenta: []
         };
 
-        this.changedMedia = [
+        this.selectedMedia = 'kloop';
+
+        this.choosedMedia = [
             'kloop',
             'zanoza',
             'cnn',
@@ -23,16 +26,27 @@ class Search  {
         ]
     }
 
+    getMediaName(key) {
+        const mediaList = {
+            'kloop': 'Kloop.kg',
+            'zanoza': 'Zanoza',
+            'cnn': 'CNN',
+            'lenta': 'Lenta'
+        };
+
+        return mediaList.hasOwnProperty(key) ? mediaList[key] : 'Error';
+    }
+
     isChangedMedia(name) {
-        return this.changedMedia.includes(name);
+        return this.selectedMedia === name;
+    }
+
+    setChangedMedia(name) {
+        return this.selectedMedia = name;
     }
 
     changeChecked(name) {
-        if (this.changedMedia.includes(name)) {
-            this.changedMedia = this.changedMedia.filter(e => e !== name);
-        } else {
-            this.changedMedia.push(name);
-        }
+        this.choosedMedia = this.choosedMedia.includes(name) ? name : false;
     }
 
     getArticles(text) {

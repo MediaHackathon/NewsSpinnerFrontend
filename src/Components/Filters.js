@@ -13,15 +13,6 @@ class Filters extends Component {
         return (
             <div className="filterColumn">
               <div className="filterItem">
-              	<h2>Новостные порталы</h2>
-              	<form>
-                  <p><input type="checkbox" onChange={() => searchStore.changeChecked('cnn')} value="cnn" checked={searchStore.isChangedMedia('cnn')} />CNN</p>
-                  <p><input type="checkbox" onChange={() => searchStore.changeChecked('kloop')} value="kloop" checked={searchStore.isChangedMedia('kloop')} />Kloop</p>
-                  <p><input type="checkbox" onChange={() => searchStore.changeChecked('lenta')} value="lenta" checked={searchStore.isChangedMedia('lenta')} />Lenta</p>
-                  <p><input type="checkbox" onChange={() => searchStore.changeChecked('zanoza')} value="zanoza" checked={searchStore.isChangedMedia('zanoza')} />Zanoza</p>
-                </form>
-              </div>
-              <div className="filterItem">
               	<h2>Сортировка</h2>
                 <form>
                   <p><input type="radio" name="true"/>Новые сверху</p>
