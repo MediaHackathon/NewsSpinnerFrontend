@@ -6,10 +6,13 @@
     "lory.js": "^2.2.1",
     "mobx": "^3.1.13",
     "mobx-react": "^4.2.1",
+    "nuka-carousel": "^2.0.4",
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
+    "react-responsive-carousel": "^3.1.19",
     "react-router": "^4.1.1",
     "react-scripts-with-decorators": "^0.9.5-5",
+    "react-slick": "^0.14.11",
     "react-slider": "^0.8.0",
     "request": "^2.81.0",
     "request-promise": "^4.2.1"

@@ -99,6 +99,7 @@ h2 {
   flex-direction: row;
   width: 70%;
   padding: 20px;
+  background-color: #fff!important;
 }
 .newsColumn {
   display: flex;
