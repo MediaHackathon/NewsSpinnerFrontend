@@ -63,7 +63,6 @@ h2 {
   justify-content: start;
   display: flex;
   flex-direction: row;
-  border-bottom: 1px solid #ddd;
 }
 
 .top .header input, .top .header button {
@@ -186,22 +185,44 @@ h2 {
 }
 .publishers ul li {
   display: inline;
+  position: relative;
   list-style: none;
   margin-right: 50px;
   cursor: pointer;
   font-weight: 600;
   border-bottom: 1px solid #fff;
+  padding: 10px 40px 2px 20px;
 }
 .publishers ul li:first-child {
   margin-left: 20px;
 }
+.publishers ul li:after {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  content: 'x';
+  margin-left: 10px;
+  font-weight: 100;
+  font-family: Verdana;
+  font-size: 12px;
+}
+.publishers ul li:last-child:after {
+  content: '';
+}
 .publishers ul li.choosen{
   background-color: #fff;
-  padding: 10px 20px 20px 20px;
+  padding: 10px 40px 2px 20px;
   border-radius: 3px;
   border-top: 1px solid #ddd;
   border-right: 1px solid #ddd;
   border-left: 1px solid #ddd;
+  border-bottom: 2px solid #fff;
+}
+.publishers ul li.plus{
+  font-family: Verdana;
+  font-size: 30px;
+  color: ForestGreen;
+  font-weight: bold;
 }
 
 @keyframes spinner-logo-spin {

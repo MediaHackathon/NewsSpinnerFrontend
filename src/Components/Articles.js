@@ -10,7 +10,7 @@ import { Carousel } from 'react-responsive-carousel';
 class Articles extends Component {
     render() {
         return (
-            <div>
+            <div className="news-container">
                 { searchStore.isChangedMedia('cnn') && <ArticlesList title="CNN" data={searchStore.searchResult.cnn} /> }
 				{ searchStore.isChangedMedia('kloop') && <ArticlesList title="Kloop" data={searchStore.searchResult.kloop} /> }
 				{ searchStore.isChangedMedia('lenta') && <ArticlesList title="Lenta.ru" data={searchStore.searchResult.lenta} /> }

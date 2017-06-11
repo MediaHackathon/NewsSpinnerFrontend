@@ -13,13 +13,14 @@ class Publishers extends Component {
         return (
             <div className="publishers">
                 <ul>
-                    { searchStore.choosedMedia.map((media, index) =>
+                    { searchStore.choosedMedia.map((media, index) => 
                         <li key={index}
                             className={searchStore.isChangedMedia(media) ? 'choosen' : ''}
                             onClick={() => searchStore.setChangedMedia(media)}>
                             {searchStore.getMediaName(media)}
                         </li>
                     ) }
+                    <li className="plus">+</li>
                 </ul>
             </div>
         );
